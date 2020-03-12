@@ -1,0 +1,186 @@
+/* ============================== */
+/* ========== GERAL ============= */
+/* ============================== */
+*{
+  transition-property: all;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+}
+:root {
+  font-size: 16px;
+  font-family: 'Open Sans';
+  --text-primary: #b6b6b6;
+  --text-secondary: #ececec;
+  --text-default: #383333;
+  --bg-default: #bdbdeb;
+  --bg-primary: #23232e;
+  --bg-secondary: #141418;
+  --bg-info: #6649b8;
+  --transition-speed: 400ms;
+}
+html, body{
+  height: 100%;
+  margin: 0;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  margin: 0;
+  padding: 0;
+}
+
+/* ============================== */
+/* ====== BARRA DE ROLAGEM ====== */
+/* ============================== */
+body::-webkit-scrollbar, .navbar::-webkit-scrollbar {
+  width: 0.30rem;
+}
+
+body::-webkit-scrollbar-track, .navbar::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb, .navbar::-webkit-scrollbar-thumb{
+  background: #6649b8;
+}
+
+
+/* ============================== */
+/* ======== ÚTILITÁRIOS ========= */
+/* ============================== */
+.panel{
+  background-color: var(--bg-secondary);
+  --text-secondary: #ececec;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 0px solid black;
+  border-radius: 20px;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.in-line{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ============================== */
+/* =========== BOTÕES =========== */
+/* ============================== */
+.btn{
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 40px;
+  cursor: pointer;
+  font-size: 15px;
+}
+.btn:hover, .btn:focus{
+  font-weight: bold;;
+}
+
+.btn:focus{
+  opacity: 0.5;
+}
+
+.btn-primary{
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+.btn-primary:hover{
+  color: var(--bg-primary);
+  background-color: var(--text-primary);
+}
+.btn-info{
+  background-color: var(--bg-info);
+  color: var(--text-primary);
+}
+.btn-info:hover{
+  color: var(--bg-info);
+  background-color: var(--text-primary);
+}
+.btn-secondary{
+  background-color: var(--bg-secondary);
+  color: var(--text-secondary);
+}
+.btn-secondary:hover{
+  color: var(--bg-secondary);
+  background-color: var(--text-secondary);
+}
+.btn-default{
+  background-color: var(--bg-default);
+  color: var(--text-default);
+}
+.btn-default:hover{
+  color: var(--bg-default);
+  background-color: var(--text-default);
+}
+
+/* ============================== */
+/* ====== CAMPO DE TEXTO ======== */
+/* ============================== */
+.input{
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.input:hover{
+  font-weight: bold;
+}
+.input::placeholder {
+  /* pensar em uma cor para placeholder */
+}
+
+.input-secondary{
+  background-color: var(--text-secondary);
+  color: var(--bg-secondary);
+}
+.input-secondary:hover{
+  color: var(--text-secondary);
+  background-color: var(--bg-secondary);
+}
+
+.input-primary{
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+
+}
+.input-primary:hover{
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
+}
+.input-info{
+  color: var(--text-info);
+  background-color: var(--bg-info);
+  
+}
+.input-info:hover{
+  background-color: var(--text-info);
+  color: var(--bg-info);
+}
+
+/* ============================== */
+/* ========== LARGURA =========== */
+/* ============================== */
+
+.block{
+  width: 100%;;
+}
+.large{
+  width: 70%;
+}
+.medium{
+  width: 50%;
+}
+.min{
+  width: 30%;
+}
+
+
+/* ============================== */
+/* ========== EXTRAS ============ */
+/* ============================== */
+.btn:focus, .input:focus, .input:hover{
+  outline: none;
+}
