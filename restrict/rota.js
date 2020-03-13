@@ -5,7 +5,7 @@ function addAba(element, newPage) {
     
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-          document.getElementById("element").innerHTML = this.responseText;
+          document.getElementById(element).innerHTML = this.responseText;
         }
       };
       xhttp.open("GET", newPage, true);
@@ -14,8 +14,8 @@ function addAba(element, newPage) {
     axios.get(newPage)
         .then(function (html) {
             $(element).fadeOut(function(){
-                $(selector).html(html);
-                $(selector).fadeIn();
+                $(element).html(html);
+                $(element).fadeIn();
             });
         })
         .catch(function (error) {
