@@ -6,6 +6,7 @@ function addAba(element, newPage) {
     axios.get(newPage)
         .then(function (html) {
             $(element).fadeOut(function(){
+                console.log(html);
                 $(element).html(html);
                 $(element).fadeIn();
             });
